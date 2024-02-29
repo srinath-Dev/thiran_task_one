@@ -5,7 +5,7 @@
 
 
     <application
-        android:label="t1"
+        android:label="Thiran Task One"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

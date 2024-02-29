@@ -40,7 +40,6 @@ class DatabaseHelper {
         batch.insert('repositories', repository.toMap());
       } else {
         // If the repository already exists
-        // For demonstration, I'm printing a message here
         print('Repository with id ${repository.id} already exists in the database.');
       }
     }

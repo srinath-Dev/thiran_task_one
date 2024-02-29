@@ -9,8 +9,6 @@ final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
    sqfliteFfiInit();
-  // databaseFactory = databaseFactoryFfi;
-
   runApp(
     ChangeNotifierProvider(create: (context) => RepositoryProvider(),
         child:const MyApp())
@@ -20,12 +18,10 @@ Future main() async {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Thiran Task One',
       debugShowCheckedModeBanner: false,
       navigatorKey: navigatorKey,
       theme: ThemeData(
