@@ -28,8 +28,9 @@ class RepositoryProvider extends ChangeNotifier {
         debugPrint(repositories.length.toString());
         if(repositories.length != 0)
          {
-           _repositories = repositories;
+         //  _repositories = repositories;
            await DatabaseHelper.insertRepositories(repositories);
+            _repositories = await DatabaseHelper.getRepositories();
          }
         notifyListeners();
         // Save repositories to the local database
